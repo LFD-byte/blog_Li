@@ -105,5 +105,5 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: git@github.com:LFD-byte/blog_Li.git
+#  repo: git@github.com:LFD-byte/blog_Li.git
   branch: gh-pages
