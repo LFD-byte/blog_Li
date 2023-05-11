@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
+title: 培根请加蛋
+subtitle: '聪明勇敢有力气，我真的羡慕我自己'
 description: ''
 keywords:
-author: John Doe
+author: 培根请加蛋
 language: en
 timezone: ''
 
@@ -114,7 +114,7 @@ theme: matery
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: git@github.com:LFD-byte/blog_Li.git
+#  repo: git@github.com:LFD-byte/blog_Li.git
   branch: gh-pages
 
 search:
