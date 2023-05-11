@@ -3,65 +3,49 @@ name: deploy
 on:
   push:
     branches:
-    - master
+      - master
+
 jobs:
-  job:
-    name: Deployment
-    runs-on: macos-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
+    runs-on: ubuntu-latest 
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+    # @see https://github.com/actions/checkout
+    - name: Checkout Repository master branch
+      uses: actions/checkout@master
 
-      # setup node
-      - name: Setup Node.js
-        uses: actions/setup-node@v3 
-        with:
-          node-version: 16
+    # @see https://github.com/actions/setup-node
+    - name: Setup Node.js
+      uses: actions/setup-node@master
+      with:
+        node-version: "14"
 
-      # setup pnpm
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        id: pnpm-install
-        with:
-          version: 7
-          run_install: false
+    - name: Setup Hexo
+      run: |
+        npm install hexo-cli -g
 
-      # cache
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+    - name: Deploy Hexo
+      run: |
+        hexo clean
+        hexo generate
+        hexo deploy
 
-      - name: Setup pnpm cache
-        uses: actions/cache@v3
-        with:
-          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
+    - name: Setup Git Infomation
+      run: |
+        git config --global user.name 'LFD-byte'
+        git config --global user.email 'huifali@163.com'
 
-      # cache fail and install dependencies
-      - name: Install dependencies
-        if: steps.pnpm-cache.outputs.cache-hit != 'true'
-        run: |
-          pnpm install
-
-      - name: Build
-        run: pnpm run build
-
-      - name: upload production artifacts
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: dist
-
-      # deploy
-      - name: Deploy Page To Release
-        id: deployment
-        uses: actions/deploy-pages@v1
+    - name: Deploy to GitHub Pages
+      uses: crazy-max/ghaction-github-pages@v2
+      with:
+        # 部署到 gh-pages 分支
+        target_branch: gh-pages
+        # 部署目录为 Hexo 的默认输出目录
+        build_dir: public
+        # 自定义域名(CNAME)(可选)
+        fqdn: 
+        # 强制提交
+        keep_history: true
+      env:
+        # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
