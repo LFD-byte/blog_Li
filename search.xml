@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>图神经网络学习日记（一）图基础知识</title>
+      <link href="/blog_Li/2023/05/23/tu-shen-jing-wang-luo-xue-xi-ri-ji-yi/"/>
+      <url>/blog_Li/2023/05/23/tu-shen-jing-wang-luo-xue-xi-ri-ji-yi/</url>
+      
+        <content type="html"><![CDATA[<h2 id="图机器学习任务"><a href="#图机器学习任务" class="headerlink" title="图机器学习任务"></a>图机器学习任务</h2><h3 id="节点预测"><a href="#节点预测" class="headerlink" title="节点预测"></a>节点预测</h3><h3 id="关系预测"><a href="#关系预测" class="headerlink" title="关系预测"></a>关系预测</h3><pre><code>rm -rf .deploy_gitnpm install hexo-deployer-git --save</code></pre><h3 id="图预测"><a href="#图预测" class="headerlink" title="图预测"></a>图预测</h3><h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 图神经网络 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 图神经网络 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/blog_Li/2023/04/20/hello-world/"/>
+      <url>/blog_Li/2023/04/20/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
