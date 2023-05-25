@@ -6,7 +6,7 @@
   <link href="https://lfd-byte.github.io/atom.xml" rel="self"/>
   
   <link href="https://lfd-byte.github.io/"/>
-  <updated>2023-05-24T07:21:26.733Z</updated>
+  <updated>2023-05-24T12:34:33.896Z</updated>
   <id>https://lfd-byte.github.io/</id>
   
   <author>
@@ -17,18 +17,46 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Latex 字母类符号</title>
+    <link href="https://lfd-byte.github.io/2023/05/24/latex-zi-mu-lei-fu-hao/"/>
+    <id>https://lfd-byte.github.io/2023/05/24/latex-zi-mu-lei-fu-hao/</id>
+    <published>2023-05-24T12:17:00.000Z</published>
+    <updated>2023-05-24T12:34:33.896Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Caligraphic letters: &lt;code&gt;$&#92;mathcal{A}$ &lt;/code&gt; etc.: $&#92;mathcal{A B C D E F G H I J K L M N O P Q I S T U V W X Y Z}$&lt;/p&gt;
+&lt;p&gt;Mathbb</summary>
+        
+      
+    
+    
+    
+    <category term="Latex" scheme="https://lfd-byte.github.io/categories/Latex/"/>
+    
+    
+    <category term="Latex" scheme="https://lfd-byte.github.io/tags/Latex/"/>
+    
+    <category term="Markdown" scheme="https://lfd-byte.github.io/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
     <title>图神经网络学习日记（一）图基础知识</title>
-    <link href="https://lfd-byte.github.io/2023/05/23/tu-shen-jing-wang-luo-xue-xi-ri-ji-yi/"/>
-    <id>https://lfd-byte.github.io/2023/05/23/tu-shen-jing-wang-luo-xue-xi-ri-ji-yi/</id>
-    <published>2023-05-23T07:22:00.000Z</published>
-    <updated>2023-05-24T07:21:26.733Z</updated>
+    <link href="https://lfd-byte.github.io/2023/05/24/tu-shen-jing-wang-luo-xue-xi-ri-ji-yi/"/>
+    <id>https://lfd-byte.github.io/2023/05/24/tu-shen-jing-wang-luo-xue-xi-ri-ji-yi/</id>
+    <published>2023-05-24T07:22:00.000Z</published>
+    <updated>2023-05-24T12:07:30.972Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;图机器学习任务&quot;&gt;&lt;a href=&quot;#图机器学习任务&quot; class=&quot;headerlink&quot; title=&quot;图机器学习任务&quot;&gt;&lt;/a&gt;图机器学习任务&lt;/h2&gt;&lt;h3 id=&quot;节点预测&quot;&gt;&lt;a href=&quot;#节点预测&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;图的定义&quot;&gt;&lt;a href=&quot;#图的定义&quot; class=&quot;headerlink&quot; title=&quot;图的定义&quot;&gt;&lt;/a&gt;图的定义&lt;/h2&gt;&lt;h2 id=&quot;图的表示&quot;&gt;&lt;a href=&quot;#图的表示&quot; class=&quot;headerlink&quot;</summary>
         
       
     
